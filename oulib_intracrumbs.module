@@ -2,20 +2,17 @@
 
 function oulib_intracrumbs_menu_breadcrumb_alter(&$active_trail, $item) {
 
-	 /* rename "home" link in bread crumbs to site name */
-	 $my_sitename = variable_get('site_name', "");
-	 $active_trail[0]["title"] = $my_sitename;
+    /* rename "home" link in bread crumbs to site name */
+    $my_sitename = variable_get('site_name', "");
+    $active_trail[0]["title"] = $my_sitename;
 
-	 /* prepend Intranet link to front of breadcrumbs */
-	 $link_home = array(	
-	     "title" => "Intranet",		 
-	     "href" => "https://intranet.libraries.ou.edu",
-	     "link_path" => "",
-	     "localized_options" => array(),
-	     "type" => 0,
-	 );
-	 array_unshift($active_trail, $link_home);
-
-
-
+    /* prepend Intranet link to front of breadcrumbs */
+    $link_home = array(	
+        "title" => "Intranet",		 
+        "href" => "https://intranet.libraries.ou.edu",
+        "link_path" => "",
+        "localized_options" => array(),
+        "type" => 0,
+    );
+    array_unshift($active_trail, $link_home);
 }
