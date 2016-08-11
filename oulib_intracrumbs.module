@@ -7,8 +7,8 @@ function oulib_intracrumbs_menu_breadcrumb_alter(&$active_trail, $item) {
     $active_trail[0]["title"] = $my_sitename;
 
     /* prepend Intranet link to front of breadcrumbs */
-    $link_home = array(	
-        "title" => "Intranet",		 
+    $link_home = array(
+        "title" => "Intranet",
         "href" => "https://intranet.libraries.ou.edu",
         "link_path" => "",
         "localized_options" => array(),
