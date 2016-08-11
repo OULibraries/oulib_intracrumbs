@@ -1,0 +1,4 @@
+name = OU Libraries Intranet Crumbs
+description = Hacking breadcrumbs for the intranet
+core = 7.x
+package = OU Libraries
